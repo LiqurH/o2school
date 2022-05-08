@@ -1,0 +1,25 @@
+@import "~taro-ui/dist/style/components/list.scss";
+
+.at-list {
+  background-color: #54cdc8;
+
+  .at-list::after {
+    content: '';
+    border: 0 solid #54cdc8;
+  }
+}
+
+.context-back {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+
+  .context {
+    width: 100vw;
+    height: 100vh;
+    // display: flex;
+    // flex-flow: column nowrap;
+    // margin: 2% ;
+    // border: 1px solid black;
+  }
+}

@@ -1,0 +1,56 @@
+@import "@/variables.scss";
+.border-box{
+    width: 100vw;
+    height: 100vh;
+    .content-box{
+        width: 100%;
+        height: 85%;
+        background-color: $color-grey-5;
+        .header{
+            width: 100%;
+            height: 15%;
+        }
+        .content{
+            width: 100%;
+            height: 85%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            .pic-box{
+                height: 20%;
+                // background-color: burlywood;
+            }
+            .con-box{
+                height: 10%;
+                font-size: $font-size-xl;
+                font-weight: 700;
+                // background-color: cadetblue;s
+            }
+            .all-box{
+                height: 15%;
+                color: $color-link-active;
+                font-size: $font-size-base;
+                // background-color: chartreuse;
+            }
+            .nut-box{
+                height: 20%;
+                width: 100%;
+                // background-color: chocolate;
+               Button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60%;
+                height: 30%;
+                border-radius: $border-radius-lg;
+                background-color: $color-warning;
+                Text{
+                    font-size: $font-size-lg;
+                    font-weight: 600;
+                    color: #FFF;   
+                }
+               }
+            }
+        }
+    }
+}

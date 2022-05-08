@@ -1,0 +1,141 @@
+@import "@/variables.scss";
+.border-box{
+    width: 100vw;
+    height: 100vh;
+    .content-box{
+        width: 100%;
+        height: 85%;
+        background-color: $color-grey-5;
+        .header-box{
+            width: 100%;
+            height: 25%;
+            background-color: $color-white;
+            display: flex;
+            flex-flow: row nowrap;
+            .header-left{
+                height: 100%;
+                width: 30%;
+            }
+            .header-right{
+                height: 100%;
+                width: 70%;
+                display: flex;
+                flex-flow: column nowrap;
+                .book-title{
+                    width: 100%;
+                    height: 20%;
+                    font-size: $font-size-lg;
+                    font-weight: 700;
+                }
+                .book-author{
+                    width: 100%;
+                    height: 20%;
+                    font-size: $font-size-base;
+                }
+                .book-text{
+                    opacity: 0.5;
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 50%;
+                    text-overflow:ellipsis;
+                    overflow:hidden;
+                    font-size: $font-size-base;
+                    padding:0% 8% 5% 3%;
+                }
+                .perch{
+                    width: 100%;
+                    height: 10%;
+                }
+            }
+        }
+        .masster-box{
+            width: 100%;
+            height: 75%;
+            .content{
+                margin-left: 5%;
+                margin-top: 8%;
+                width: 90%;
+                height: 93%;
+                background-color: $color-white;
+                .content-text{
+                    display: inline-block;
+                    margin-left: 5%;
+                    width: 90%;
+                    height: 100%;
+                    .header{
+                        width: 100%;
+                        height: 15%;
+                        position: relative;
+                        box-sizing: border-box;
+                        border-bottom: 1px solid #F0F0F0;
+                        // background-color: cornflowerblue;
+                        .title{
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-size: $font-size-xl;
+                        }
+                        .addprice{
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 40%;
+                            height: 50%;
+                            .price-add{
+                                width: 80%;
+                                height: 80%;
+                            }
+                        }
+                    }
+                    .center{
+                        width: 100%;
+                        height: 35%;
+                        .title{
+                            box-sizing: border-box;
+                            font-size: $font-size-xl;
+                            padding-top: 3%;
+                            width: 100%;
+                            height: 30%;
+                        } 
+                        .new-level{
+                            width: 100%;
+                            height: 70%;
+                            display: flex;
+                            flex-flow: row wrap;
+                            border-bottom: 1px solid #F0F0F0;
+                            View{
+                                width: 25%;
+                                margin: 0 4%;
+                                .attag{
+                                    width: 100%;
+                                    font-size: $font-size-sm;
+                                }
+                            }      
+                        }
+                    }
+                    .bottom{
+                        width: 100%;
+                        height: 20%;
+                        display: flex;
+                        align-items: center;
+                        .topubpage{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 60%;
+                            height: 40%;
+                            border-radius: $border-radius-lg;
+                            background-color: $color-warning;
+                            Text{
+                                font-size: $font-size-xl;
+                                font-weight: 700;
+                                color: #FFF;   
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

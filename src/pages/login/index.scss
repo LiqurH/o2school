@@ -1,0 +1,162 @@
+@import '@/variables.scss';
+
+.context-back {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+
+  .context {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+
+    .label {
+      height: 15%;
+      // background-color: aqua;
+      display: flex;
+      // flex-flow:  nowrap;
+      align-items: flex-end;
+      justify-content: center;
+
+      .text {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        margin-left: 20%;
+        margin-bottom: 5%;
+        // justify-content: center;
+        // background-color: cornflowerblue;
+        font-size: $font-size-xxl;
+
+        .image {
+          width: 20%;
+          height: 100%;
+          // background: #fff;
+          margin-right: 5%;
+          border-radius: $border-radius-circle;
+          // background-image: url(./o2.png);
+        }
+      }
+    }
+
+    .login-input {
+      height: 25%;
+
+      // background-color: beige;
+      .username,
+      .passworld {
+        width: 100%;
+        height: 30%;
+        margin-bottom: 2.5%;
+        display: flex;
+
+        .up {
+          width: 20%;
+          height: 100%;
+          border-radius: 50% 0 0 50%;
+          background-color: $color-grey-4;
+        }
+
+        .input {
+          width: 80%;
+          height: 100%;
+          background-color: $color-grey-4;
+        }
+
+        .down {
+          width: 20%;
+          height: 100%;
+          border-radius: 0 50% 50% 0;
+          background-color: $color-grey-4;
+        }
+      }
+
+      .auth-code {
+        // background-color: cornflowerblue;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        margin-bottom: 2.5%;
+
+        .up {
+          width: 20%;
+          height: 100%;
+          border-radius: 50% 0 0 50%;
+          background-color: $color-grey-4;
+        }
+
+        .input {
+          width: 40%;
+          height: 100%;
+          background-color: $color-grey-4;
+        }
+
+        .down {
+          width: 40%;
+          height: 100%;
+          display: flex;
+
+          #verify_img {
+            width: 90%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .login-in {
+      height: 30%;
+
+      // background-color: blueviolet;
+      .login {
+        width: 100%;
+        height: 20%;
+        margin-top: 10%;
+
+        Button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 80%;
+          height: 90%;
+          border-radius: $border-radius-lg;
+          background-color: $color-brand;
+
+          Text {
+            font-size: $font-size-lg;
+            font-weight: 700;
+            color: #FFF;
+          }
+        }
+      }
+
+      .deal {
+        width: 100%;
+        height: 50%;
+        margin-top: 3%;
+        margin-left: 8%;
+        display: flex;
+        font-size: $font-size-sm;
+
+        .role {
+          color: $color-link-active;
+        }
+      }
+    }
+
+    .hint {
+      font-size: $font-size-lg;
+      height: 30%;
+      // background-color: chocolate;
+      display: flex;
+      flex-flow: nowrap nowrap;
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding-left: 10%;
+      padding-bottom: 15%;
+    }
+  }
+}

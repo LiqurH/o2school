@@ -1,0 +1,131 @@
+@import "@/variables.scss";
+
+.bottom-box {
+  width: 100%;
+  height: 60%;
+  background-color: $color-white;
+
+  .content {
+    width: 94%;
+    height: 100%;
+    margin-left: 3%;
+
+    .title {
+      color: $color-black-0;
+      font-size: $font-size-xl;
+      box-sizing: border-box;
+      width: 100%;
+      height: 15%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      border-bottom: 1px solid #CCC;
+
+      .title-input {
+        font-size: $font-size-base;
+        width: 90%;
+        margin-top: 2%;
+        margin-left: 10%;
+      }
+    }
+
+    .detail {
+      color: $color-black-1;
+      font-size: $font-size-xl;
+      box-sizing: border-box;
+      width: 100%;
+      height: 15%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      //   background-color: blueviolet;
+
+      .detail-input {
+        font-size: $font-size-base;
+        width: 90%;
+        margin-top: 2%;
+        margin-left: 10%;
+      }
+    }
+
+    .sub-box {
+      width: 100%;
+      height: 60%;
+      margin-top: 3%;
+      //   background-color: aqua;
+
+      .center {
+        width: 100%;
+        height: 50%;
+
+        .title {
+          box-sizing: border-box;
+          font-size: $font-size-xl;
+          padding-top: 1%;
+          width: 100%;
+          height: 30%;
+          border-bottom: none;
+        }
+
+        .new-level {
+          width: 100%;
+          height: 70%;
+          display: flex;
+          flex-flow: row wrap;
+          border-bottom: 1px solid #F0F0F0;
+
+          View {
+            width: 25%;
+            margin: 0 4%;
+
+            .attag {
+              width: 100%;
+              font-size: $font-size-sm;
+            }
+          }
+        }
+      }
+
+      .sub {
+        width: 100%;
+        height: 50%;
+        // background-color: blue;
+        margin-top: 8%;
+
+        Button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50%;
+          height: 30%;
+          border-radius: $border-radius-lg;
+          background-color: $color-warning;
+
+          Text {
+            font-size: $font-size-lg;
+            font-weight: 700;
+            color: #FFF;
+          }
+        }
+
+        .sub-role {
+          margin-top: 5%;
+          width: 100%;
+          height: 50%;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          font-size: $font-size-base;
+
+          .icon {
+            margin-right: 2%;
+          }
+
+          .role {
+            color: $color-link-active;
+          }
+        }
+      }
+    }
+  }
+}

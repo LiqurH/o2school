@@ -1,0 +1,37 @@
+@import "@/variables.scss";
+.center-box{
+    width: 100%;
+    height: 15%;
+    margin: 5% 0;
+    background-color: $color-white;
+    .exp-price,
+    .get-price{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-flow: row nowrap;
+        Text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: $font-size-xl;
+            width: 30%;
+            height: 100%; 
+        }
+        View{
+            width: 70%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+            .exp-input{ 
+                width: 100%;
+                height: 70%;
+            }  
+            .get-input{ 
+                width: 100%;
+                height: 70%;
+            }        
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@import "@/variables.scss";
+.border-box{
+    width: 100vw;
+    height: 100vh;
+    .content-box{
+        width: 100%;
+        height: 85%;
+        background-color: $color-grey-5;
+        .head-box{
+            width: 100%;
+            height: 10%;
+            background-color: $color-white;
+            position: relative;
+            .isbn-input{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 55%;
+                background-color: $color-grey-5;
+                margin-left: 8%;
+                padding: 1% 0 1% 9%;
+                border-radius: $border-radius-md;
+            }
+            .isbn-input::before{
+                left: 2%;
+                top: 10%;
+                content: '+';
+                position: absolute;
+                display:block;
+                width: 10%;
+                height: 80%;
+                background-color: cyan;
+                text-align: center;
+            }
+        }
+        .text-box{
+            width: 100%;
+            height: 30%;
+            background-color: $color-white;
+        }
+        .bottom-box{
+            font-size: $font-size-base;
+            width: 100%;
+            height: 15%;
+            background-color: $color-white;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            Text{
+                margin-bottom: 2%;
+            }
+        }
+        .tosuppage{
+            display: flex;
+            flex-flow: row nowrap;          
+            align-items: center;           
+            width: 100%;
+            height: 10%;
+            // background-color: darkgreen;
+            Button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40%;
+                height: 50%;
+                border-radius: $border-radius-lg;
+                background-color: $color-warning;
+                Text{
+                    font-size: $font-size-lg;
+                    font-weight: 700;
+                    color: #FFF;   
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import "@/variables.scss";
+.left{
+    height: 100%;
+    width: 9%;
+    background-color: #F0F0F0;
+    display: flex;
+    flex-flow: column nowrap; 
+    .item{
+        flex-wrap: 1;
+        height: 10%;
+        width: 100%; 
+        // margin-bottom: 1%;
+        // border: 1px solid black;
+        justify-content: center; 
+        align-items: center;
+        display: flex;
+    }
+}
